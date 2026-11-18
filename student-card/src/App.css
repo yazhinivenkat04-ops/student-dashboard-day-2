@@ -1,0 +1,210 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.main-header {
+  background: linear-gradient(135deg, #172554, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+
+.main-header h1 {
+  margin: 0 0 10px;
+}
+
+.dashboard {
+  max-width: 1150px;
+  margin: auto;
+  padding: 25px;
+}
+
+.stats {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px #00000010;
+}
+
+.stats h1 {
+  color: #2563eb;
+  font-size: 35px;
+  margin: 8px;
+}
+
+.form-box,
+.search-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px #00000010;
+}
+
+.form-box input,
+.form-box select,
+.search-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 9px 0 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.form-box label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 13px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.preview {
+  width: 100px;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.student-list h2 {
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 22px;
+}
+
+.id-card {
+  width: 100%;
+  max-width: 340px;
+  margin: auto;
+  background: white;
+  border: 2px solid #1e3a8a;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+  box-shadow: 0 5px 15px #00000015;
+}
+
+.id-header {
+  background: #1e3a8a;
+  color: white;
+  padding: 15px 8px;
+}
+
+.id-header h3 {
+  margin: 5px;
+}
+
+.id-header p {
+  margin: 5px;
+  font-size: 11px;
+}
+
+.college-logo {
+  background: white;
+  color: #1e3a8a;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  font-weight: bold;
+}
+
+.student-photo {
+  width: 110px;
+  height: 125px;
+  object-fit: cover;
+  border: 3px solid #2563eb;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.id-card h2 {
+  color: #1e3a8a;
+  font-size: 20px;
+}
+
+.details {
+  text-align: left;
+  padding: 0 15px;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.details p {
+  margin: 9px 0;
+}
+
+.id-footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+  padding: 15px 5px;
+  margin: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.empty {
+  text-align: center;
+  color: gray;
+}
+
+footer {
+  background: #172554;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    padding: 12px;
+  }
+
+  .main-header h1 {
+    font-size: 22px;
+  }
+}
